@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: rgba(255, 192, 203, 0.665);
+  /* overflow: hidden; */
+}
+
+/* styles for navbar */
+.navbar .nav-bar {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  background: #222020;
+}
+.navbar .nav-bar a {
+  font-family: cursive;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(221, 62, 88);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* styles for header */
+.header {
+  width: 100%;
+  height: 100vh;
+  /* padding: 10rem 3rem; */
+  position: relative;
+  z-index: -1;
+  background-size: cover no-repeat;
+  border: 3px solid green;
+  overflow: hidden;
+}
+.text h1 {
+  position: absolute;
+  z-index: 1;
+}
+.header img {
+  width: 100%;
+  height: 100vh;
+}
+.text h1 {
+  width: 50%;
+  height: 200px;
+  font-size: 6rem;
+  font-weight: 800;
+  font-family: cursive;
+  color: rgb(221, 62, 88);
+  position: absolute;
+  z-index: 1;
+  top: 15rem;
+  padding: 0 5rem;
+}
+.text h1 span {
+  padding-left: 8rem;
+}
+.navbar .text p {
+  font-size: 1.5rem;
+  padding: 0 10rem;
+  color: #222020;
+  position: absolute;
+  top: 50rem;
+  font-weight: 600;
+}
+
+/* stories section */
+.stories {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 4rem;
+  padding: 3rem 0;
+  border: 3px solid blue;
+}
+.stories img {
+  width: 400px;
+  height: 400px;
+  border-radius: 3px;
+  /* flex: 1; */
+}
+.text-1 {
+  width: 58.5%;
+  height: 400px;
+  padding: 3rem;
+  /* border: 2px solid black; */
+  border-radius: 3px;
+  text-align: center;
+  word-spacing: 2px;
+  font-family: cursive;
+  font-weight: 500;
+  padding-top: 3rem;
+  font-size: 18px;
+}
+.text-1 p,
+.text-2 p {
+  color: #000;
+}
+.text-1 h2 {
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+  font-size: xx-large;
+  color: rgb(221, 62, 88);
+}
+
+.text-2 {
+  width: 58.5%;
+  height: 400px;
+  padding: 3rem;
+  /* border: 2px solid black; */
+  border-radius: 3px;
+  text-align: center;
+  word-spacing: 2px;
+  font-family: cursive;
+  font-weight: 500;
+  padding-top: 4rem;
+  font-size: 18px;
+}
+
+/* styles for gallery */
+.gallery {
+  overflow: hidden;
+}
+.gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding-top: 3rem;
+}
+.gallery ul li {
+  list-style: none;
+}
+.gallery ul li img {
+  width: 300px;
+  height: 300px;
+}
+
+/*.gallery.hi-slide {
+  position: relative;
+  width: 754px;
+  height: 292px;
+  border-radius: 50px;
+  margin: 115px auto 0;
+} */
+
+.btn {
+  padding: 1rem 1rem;
+  /* border: 1px solid black; */
+  width: 14rem;
+  /* height: 5rem; */
+
+  margin-block: 3rem;
+  margin-left: 32px;
+  border-radius: 3px;
+  background: #222020;
+  text-align: center;
+  box-shadow: 1rem 1rem 1rem rgb(0, 0, 0);
+}
+.btn a {
+  text-decoration: none;
+  word-spacing: 5px;
+  font-size: 1.5rem;
+  color: rgb(221, 62, 88);
+}
+
+/* footer section */
+footer {
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+  background: #222020;
+  overflow: hidden;
+}
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+}
+footer .footer i {
+  /* width: 20px;
+  height: 3rem; */
+  padding: 1rem 2rem;
+  /* color: #fff; */
+  color: rgb(221, 62, 88);
+  font-size: 1.5rem;
+}
+footer .footer p span {
+  padding: 0 2rem;
+}
+.footer h3,
+p {
+  color: #fff;
+}
